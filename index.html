@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=M, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquerries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> Beldina Kinya Kinyua</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"> Beldina Kinya Kinyua</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="Profile">
+        <div class="section__pic-container">
+            <img src="./assets/pp3.jpg" alt="Profile pic" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Beldina Kinya Kinyua</h1>
+            <p class="section__text__p2">ICT Expert</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Beldina Kinya CV.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me</button>
+            </div>
+            <div id="social-container">
+                <span class="icon">
+                    <i class="fab fa-linkedin" onclick="location.href='https://linkedin.com/'" style="font-size: 30px;" ></i>
+                </span>
+                <span class="icon">
+                    <i class="fab fa-github" onclick="location.href='https://github.com/BeldinaKiki'"style="font-size: 30px;"></i>
+                </span>
+                <span class="icon">
+                    <i class="fab fa-instagram" onclick="location.href='https://github.com/'"style="font-size: 30px;"></i>
+                </span>
+
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1"> Get To Know More About Me!</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+       <div class="section__pic-container2">
+            <img src="./assets/pp1.jpg" alt="about ppf" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <!--<img src="./assets/ppd.jpg" alt="expereince icon" class="icon"/> -->
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3> Education</h3>
+                    <p><strong>Bachelor of Business Information Technology </strong><br /> Strathmore University</p>
+                    <p><strong>Kenya Certificate of Secondary Education</strong> <br /> Alliance Girls' High School</p>
+                    <p><strong>Kenya Certificate of Primary Education</strong> <br /> Le Pic Primary School</p>
+
+                </div>
+                <div class="details-container">
+                    <i class="fa fa-certificate"></i>
+                    <h3>SKILLS</h3>
+                    <div class="skill">
+                        <span class="skill-name">HTML/CSS:</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="--progress-width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Java:</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="--progress-width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">PHP</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="--progress-width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Python:</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="--progress-width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">SQL</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="--progress-width: 55%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-container">
+                <p><strong>Hi, I'm Beldina Kinya </strong>, a passionate Tech girl based in Nairobi. I hold a Bachelor's degree in Business and Information Technology from Strathmore University, where I had the opportunity to work on exciting projects. My skills include Programming in different languages such as python,PHP and Java, Machine learning concepts, and digital marketing, and I specialize in ICT software development. Previously, I worked as an intern at Co-operative Bank. When I'm not working, I enjoy watching tiktoks, walking, and swimming. 
+                </p>
+            </div> 
+         </div>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1"> Browse My Recent</p>
+        <h1 class="title"> Projects </h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/events.png" alt="Project 1 " class="projectimg" />
+                </div>
+                <h2 class="experience-sub-title project title"> Event Management System</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Beldinakiki?tab=repositories'"> Github</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/food.png" alt="Project 2 " class="projectimg"  />
+                </div>
+                <h2 class="experience-sub-title project title"> Food Recipes App</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Beldinakiki?tab=repositories'"> Github</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/real.png" alt="Project 3 " class="projectimg"/>
+                </div>
+                <h2 class="experience-sub-title project title"> Real Estate Website</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Beldinakiki?tab=repositories'"> Github</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title"> Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <i class="fa fa-envelope"  style="font-size: 30px;" ></i> 
+            <p><a href="mailto:kinyuabeldina@gmail.com">kinyuabeldina@gmail.com</a></p>
+        </div>
+            <div class="contact-info-container">
+                    <i class="fab fa-linkedin"  style="font-size: 30px;" ></i> 
+                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+                <i class="fa fa-phone-square"  style="font-size: 30px;" ></i> 
+            <p><a href="tel:+254113839448">Phone Number</a></p>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <nav id="footer-nav">
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href=#Profile>Profile</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            
+             <!--html copyright symbol &#169-->
+        <p>Copyright &#169; 2024 Beldina Kinya. All Rights Reserved.</p>
+        </nav>
+    </footer>
+            </div>
+    <script src="script.js"></script>
+</body>
+</html>
